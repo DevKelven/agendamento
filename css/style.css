@@ -75,7 +75,7 @@ header h1::first-letter{
     margin-left: 40px;
 }
 
-#container-form #login,#container-form #senha{
+#container-form #login,#container-form #senha,#container-form #name{
     border: 1px solid rgb(190, 190, 190);
     border-radius: 30px;
     padding: 10px 90px 10px 20px;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Login</title>
 </head>
 <body>
@@ -19,15 +19,19 @@
 
     <main>
         <div id="container-form">  
-                <form action="#" method="get">
+                <form action="../crud/salvarPaciente.php" method="post">
                      <h1>LOGIN</h1>
+                    <label for="tName">Nome:</label>
+                    <br>
+                        <input type="text" name="txtName" id="name" placeholder="Digite seu Nome">
+                    <br>
                     <label for="login">Login:</label>
                     <br>
-                        <input type="text" name="login" id="login" placeholder="Digite seu Nome">
+                        <input type="text" name="txtLogin" id="login" placeholder="Digite seu Nome">
                     <br>
                     <label for="login">Senha:</label>
                     <br>
-                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                        <input type="password" name="txtSenha" id="senha" placeholder="Digite sua senha">
                     <br>   
                     <input type="submit" value="Enviar" id="enviar" onclick="envia()">
                     <input type="reset" value="Limpar" id="limpar">
