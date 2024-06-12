@@ -5,7 +5,8 @@
 
     include "../servico/service.class.php";
     $con = new Service();
-    $con->salvar("INSERT INTO PACIENTE(NOME,LOGIN,SENHA) VALUES('" . $nome . "', '" . $login . "','". $senha . "')");
+    $codificada = hash('sha512',$senha);
+    $con->salvar("INSERT INTO PACIENTE(NOME,LOGIN,SENHA) VALUES('" . $nome . "', '" . $login . "','". $codificada . "')");
 
 
 ?>
