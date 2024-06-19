@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Login</title>
+    <title>Agendamento</title>
 </head>
 <body>
     <header>
@@ -19,19 +19,19 @@
 
     <main>
         <div id="container-form">  
-                <form action="../crud/salvarPaciente.php" method="post">
-                     <h1>Cadastro</h1>
-                    <label for="tName">Nome:</label>
+                <form action="../crud/salvarAgendamento.php" method="post">
+                     <h1>Agendamento</h1>
+                    <label for="tName">Agendamento:</label>
                     <br>
-                        <input type="text" name="txtName" id="name" placeholder="Digite seu Nome">
+                        <input type="text" name="txtAgendamento" id="name" placeholder="Digite Agendamento">
                     <br>
-                    <label for="login">Email:</label>
+                    <label for="login">Paciente:</label>
                     <br>
-                        <input type="text" name="txtLogin" id="login" placeholder="Digite seu Email">
+                        <input type="number" name="txtPaciente" id="login" placeholder="Digite o Número">
                     <br>
-                    <label for="login">Senha:</label>
+                    <label for="login">Data Agendamento:</label>
                     <br>
-                        <input type="password" name="txtSenha" id="senha" placeholder="Digite sua senha">
+                        <input type="date" name="data" id="agendamento">
                     <br>   
                     <input type="submit" value="Enviar" id="enviar" onclick="envia()">
                     <input type="reset" value="Limpar" id="limpar">

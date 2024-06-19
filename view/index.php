@@ -13,6 +13,7 @@
             <ul>
                 <a href="logUser.html"><li class="menu">login</li></a>
                 <a href="fimlogin.php"><li class="menu">Cadastro</li></a>
+                <a href="agendar.php"><li class="menu">Agendar</li></a>
                 <a href="../servico/encerrar.php">encerrar</a>
             </ul>
         </nav>
